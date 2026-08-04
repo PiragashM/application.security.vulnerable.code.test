@@ -22,7 +22,7 @@ on:
   # Ensure you have the correct branch/es for your project
   # Recommend only setting the default branch on push, or branches you push to frequently
   push:
-    branches: ["main"]
+    branches: ["master"]
 
   # Schedule the CI job (this method uses cron syntax):
   #schedule:
@@ -41,7 +41,7 @@ jobs:
       # If at least 1 ID has not been entered the auto-tagging feature will not work
       iapm-ids: '99999'
       # (Optional) Please insert the branch that should be tagged as "prod"
-      prod-branch: 'main'
+      prod-branch: ''
       # (Optional) Please indicate if this should be calculated for ASPN scoring entering true
       # If set to true, the default branch will be tagged as prod and all other branches will be tagged as dev
       prod-scan: 'true'
